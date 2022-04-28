@@ -13,9 +13,8 @@ if [ -z "$dotfiles" ]; then
     export dotfiles="$HOME/dotfiles"
 fi
 
-# The following sets up your prompt to show at least the host
-export PS1='\[\e[0;31m\][\u@\h  \W]\$\[\e[m\] '
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+# Custom prompt
+source ~/.config/zlentz-config/ext/prompt
 
 # Your default editor will be set to vim.
 #  * Having trouble using it? Try running `vimtutor`.
@@ -147,10 +146,6 @@ shopt -s histappend
 
 # Save multi-line commands as one command.
 shopt -s cmdhist
-
-# Record each line as it gets issued.
-# We don't need "export PROMPT_COMMAND" here as only bash cares about this.
-PROMPT_COMMAND='history -a'
 
 # Keep a long list of history lines, because it's convenient and we have the
 # space.  Default is normally 500.

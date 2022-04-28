@@ -2,9 +2,9 @@
 
 [user]
     ; Set your name here
-    name =
+    name = Zachary Lentz
     ; Set your e-mail address here
-    email =
+    email = zlentz@slac.stanford.edu
 
 [url "http://git.code.sf.net/"]
     insteadOf = git://git.code.sf.net/
