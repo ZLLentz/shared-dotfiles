@@ -264,3 +264,8 @@ helpme() {
 # The tool shellcheck is available in our pcds Python environment.
 #
 # For bash help, see https://tldp.org/LDP/Bash-Beginners-Guide/html/
+
+conda_env() {
+  source ~/miniconda3/etc/profile.d/conda.sh
+  conda activate base
+}
